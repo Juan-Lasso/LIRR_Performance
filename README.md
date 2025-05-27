@@ -5,7 +5,8 @@
 As New York City rolls out its congestion pricing program, state officials are encouraging Long Island commuters to shift from driving to using the Long Island Rail Road (LIRR). LIRR leadership touts record on-time performance rates, but a deeper look into state data and rider experiences reveals a more complex picture. While trains ran on time more often in 2024 than in any previous non-pandemic year, the total number of delayed trains remains higher than in 2022 due to increased service and ongoing infrastructure issues. Riders continue to deal with operational hiccups — like missed transfers at Jamaica Station and persistent equipment problems — even as the system expands. 
 
 Meanwhile, fare increases loom, leaving commuters frustrated by rising costs despite modest service improvements. The story examines the gap between official performance metrics and the everyday experience of riders navigating a changing transit landscape. 
-🔗 For the full story, see my article:  
+
+🔗 For the full story, see the article:  
 [Why Long Island Railroad’s record on-time performance tells only half the story](https://www.liherald.com/stories/why-long-island-rail-roads-record-on-time-performance-tells-only-half-the-story,212536)
 
 # Methodology 
