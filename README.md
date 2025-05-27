@@ -20,7 +20,7 @@ By comparing years, I could see how operational challenges like scheduling confl
 # Data Source
 
 The original dataset used in this analysis can be found here:  
-[Download Demographic Snapshot Data (Excel)](https://github.com/Juan-Lasso/ELL_Final_Story/raw/main/ELL_data_folder/raw-data/Demographic_Snapshot_ENL.xlsx)
+[Download Raw LIRR Train Delay Data (CSV)](VS_LIRRFare_Raw_Data.csv)
 
 The cleaned, modified data set in this analysis can be found here:
 [Download LIRR Train Delay Data (Excel)](VS_LIRRFare_Time_Lasso.xlsx)
