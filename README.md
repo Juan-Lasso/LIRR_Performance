@@ -10,20 +10,11 @@ Meanwhile, fare increases loom, leaving commuters frustrated by rising costs des
 [Why Long Island Railroad’s record on-time performance tells only half the story](https://www.liherald.com/stories/why-long-island-rail-roads-record-on-time-performance-tells-only-half-the-story,212536)
 
 # Methodology 
-To understand where the number of English Language Learner students is growing fastest in New York City, I analyzed enrollment data released by the city’s Department of Education.
+To dig into the LIRR’s on-time performance, I started by downloading the raw train delay data from the New York State Open Data portal. Using Google Sheets, I cleaned the data down to the essentials — keeping only Service Date, Status, Minutes Late, and Delay Category. Then, I broke the data out by year and created pivot tables to count how often each cause of delay appeared, giving a clear picture of what was driving lateness over the past three years.
 
-The information comes from the DOE’s Demographic Snapshot, a dataset that includes demographic and enrollment figures for every public school in the city. I focused on a subset of the data that tracks ELL enrollment at the school level across recent academic years.
+It’s important to note a few caveats here. The LIRR’s official “on-time” standard allows a grace period of up to six minutes, meaning delays shorter than that don’t count — so the data doesn’t capture those smaller, yet frustrating, wait times commuters often experience. Also, the increase in train volume, especially after the opening of Grand Central Madison, makes the system more complex; more trains mean more opportunities for delays, even if the overall on-time percentage improves.
 
-The file — downloaded in April 2025 — includes data up through the 2023–24 school year. The analysis compared enrollment from 2022–23 to 2023–24 to identify which schools saw the biggest increase in the number of ELL students, regardless of school size using percent change.
-
-To perform the analysis, the data was cleaned and reformatted using Python and the Pandas library. I filtered the file to retain only the relevant fields: school name, year, total enrollment, and the number and percentage of ELL students. A new column was added to extract the starting year of each school year (e.g., 2022 for 2022–23) to simplify comparisons.
-
-After isolating the two most recent years, I calculated the year-over-year change in the number of ELL students at each school. Schools were ranked based on the highest percent change in ELL students, and the 10 schools with the largest jumps were selected.
-
-One outlier, Olympus Academy, was excluded from the final results. While the school technically saw a 700% increase in ELL enrollment — from one student in 2022–23 to eight in 2023–24 — the change was not statistically significant compared to the much larger increases at other schools. To maintain the integrity of the findings, only schools with meaningful absolute gains were considered.
-
-The analysis does not account for percentage growth or longer-term trends. Schools with missing data for either of the two years were excluded, as were schools with no change or a decrease in ELL enrollment. The dataset includes both traditional public and charter schools, but no distinction was made between them.
-Factors such as changes in classification, policy shifts, or new program rollouts may also influence ELL counts beyond student movement alone. While the data offers insight into recent shifts, it may not capture the full picture of why certain schools saw rapid growth.
+By comparing years, I could see how operational challenges like scheduling conflicts, slow boarding, and train door malfunctions contributed heavily to delays — problems largely within LIRR’s control. Meanwhile, infrastructure maintenance and aging equipment also played big roles. The data showed that while trains ran more punctually overall, the average length of delays didn’t really get shorter, holding steady around 11 to 12 minutes.
 
 
 # Data Source
@@ -32,4 +23,4 @@ The original dataset used in this analysis can be found here:
 [Download Demographic Snapshot Data (Excel)](https://github.com/Juan-Lasso/ELL_Final_Story/raw/main/ELL_data_folder/raw-data/Demographic_Snapshot_ENL.xlsx)
 
 The cleaned, modified data set in this analysis can be found here:
-[Download ENL Percent Change Data (Excel)](https://github.com/Juan-Lasso/ELL_Final_Story/raw/main/ENL_percent_change.xlsx)
+[Download LIRR Train Delay Data (Excel)](VS_LIRRFare_Time_Lasso.xlsx)
